@@ -189,7 +189,7 @@ chosenFont <- "Times New Roman"
 g3 <- ggplot(toplot.aggr2) + theme_minimal() + 
   geom_line(aes(x=Month, y=Value, colour=Type, linetype=Type, size=Type)) + 
   #geom_point(aes(x=Month, y=Value, colour=Type, shape=Type, alpha=Type), size=2) + 
-  labs(y="Tenure (months)", x="Origination Cohort (ccyymm)") + 
+  labs(y="Tenure (months)", x="Origination Cohort") + 
   theme(text=element_text(size=12,family=chosenFont), legend.position="bottom") +
   scale_color_manual(values=c("#1c9099","#a6bddb"), label = label.vec, name="") + 
   scale_size_manual(values = c(1, 0.75), label = label.vec, name="") + 
